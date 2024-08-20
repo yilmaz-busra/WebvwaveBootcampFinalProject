@@ -1,48 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div>
+    <header>
       <nav className="navbar">
         <div className="container">
-          <a href="/" className="navbar-brand">
-            techcareer.net
-          </a>
+          <Link to="/" className="navbar-brand">
+            <img
+              src="/techcareer-logo.svg"
+              alt="TechCareer Logo"
+              className="logo"
+            />
+          </Link>
           <div className="navbar-search">
-            <input type="text" placeholder="Etkinlik, Iş ilanı, Blog Ara" />
-            <button type="submit">Ara</button>
+            <input
+              type="text"
+              placeholder="Etkinlik, Iş ilanı, Blog Ara"
+              className="search-input"
+            />
           </div>
-          <ul className="navbar-nav">
+          <div className="navbar-hamburger" onClick={toggleMenu}>
+            &#9776;
+          </div>
+          <ul className={`navbar-nav ${isOpen ? "open" : ""}`}>
             <li className="nav-item">
-              <a href="/activities" className="nav-link">
+              <Link to="/activities" className="nav-link">
                 Etkinlikler
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/jobpost" className="nav-link">
+              <Link to="/jobpost" className="nav-link">
                 Iş Ilanları
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/education" className="nav-link">
+              <Link to="/education" className="nav-link">
                 Eğitimler
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/companies" className="nav-link">
+              <Link to="/companies" className="nav-link">
                 Şirketler
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/giris" className="nav-link">
+              <Link to="/giris" className="nav-link login-button">
                 Giriş / Üye Ol
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
