@@ -5,12 +5,14 @@ import Education from "./Pages/Education/Education";
 import JobPost from "./Pages/JobPost/JobPost";
 import Navbar from "./Components/Navbar";
 import Events from "./Pages/Events/Events";
+import Navbar1 from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar1 />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
