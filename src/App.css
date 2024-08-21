@@ -3,18 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-slider-section {
-  margin: 20px 0;
-}
 
-.slick-slide {
-  padding: 10px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
 .container-card {
   display: flex;
   flex-direction: column;
