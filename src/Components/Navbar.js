@@ -4,9 +4,14 @@ import "./navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
   };
 
   return (
@@ -20,25 +25,28 @@ function Navbar() {
               className="logo"
             />
           </Link>
-          <div className="navbar-search">
+          <div className={`navbar-search ${isSearchOpen ? "open" : ""}`}>
             <input
               type="text"
-              placeholder="Etkinlik, Iş ilanı, Blog Ara"
+              placeholder="Etkinlik, İş ilanı, Blog Ara"
               className="search-input"
             />
+            <div className="search-icon" onClick={toggleSearch}>
+              🔍
+            </div>
           </div>
           <div className="navbar-hamburger" onClick={toggleMenu}>
             &#9776;
           </div>
           <ul className={`navbar-nav ${isOpen ? "open" : ""}`}>
             <li className="nav-item">
-              <Link to="/activities" className="nav-link">
+              <Link to="/events" className="nav-link">
                 Etkinlikler
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/jobpost" className="nav-link">
-                Iş Ilanları
+                İş İlanları
               </Link>
             </li>
             <li className="nav-item">
