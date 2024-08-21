@@ -1,0 +1,55 @@
+.course-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Kartların genişliği, sayfa genişliğine göre ayarlanacak */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+  padding: 15px; /* Kart içeriği etrafındaki boşluğu azaltmak için */
+  min-height: 300px; /* Kartların yüksekliğini sınırlamak için */
+}
+
+.course-card:hover {
+  border: 1px solid #000000;
+}
+
+.card-header h3 {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.card-header p {
+  font-size: 8px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer span {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.card-footer button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-footer button:hover {
+  background-color: #218838;
+}
