@@ -28,6 +28,8 @@
 .navbar-search {
   position: relative;
   width: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .search-input {
@@ -37,6 +39,14 @@
   border-radius: 4px;
 }
 
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+
+/* Hamburger menu icon for mobile */
 .navbar-hamburger {
   display: none;
   font-size: 2rem;
@@ -74,24 +84,52 @@
   background-color: #02d076;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
-  .navbar-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 1rem;
-    z-index: 10;
-    flex-direction: column;
-  }
-
   .navbar-hamburger {
     display: block;
   }
 
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    background-color: #fff;
+
+    z-index: 10;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
   .navbar-nav.open {
-    display: flex;
+    display: block;
+  }
+
+  .navbar-search {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar-search.open .search-input {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .search-icon {
+    position: relative;
+    right: auto;
   }
 }
