@@ -4,12 +4,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
+.raito-cont {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 80px;
 }
 
 .navbar-brand {
@@ -27,7 +28,7 @@
 
 .navbar-search {
   position: relative;
-  width: 300px;
+  width: 300px !important;
   display: flex;
   align-items: center;
 }
