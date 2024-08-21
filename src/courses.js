@@ -3,6 +3,7 @@ export const courses = [
     id: 1,
     title: "React Native Workshop",
     date: "28.08.2024",
+    image: "workshop.png",
     preinformation: "Ücretsiz Geleceğin...",
     description:
       "React Native Workshop’a Katılmaya Hazır mısın? 📱💻Mobil uygulama geliştirme dünyasına adım atarak hem iOS hem de Android platformlarında çalışacak uygulamalar yaratmayı öğrenmeye ne dersin? React Native kullanarak uygulama geliştirme sürecini hızlandıracak ve platformlar arası işbirliğini artıracaksın! Bu 10 saatlik workshop ile React Native'in temel kavramlarını, bileşen yapısını, stil yönetimini ve uygulama geliştirmenin püf noktalarını öğreneceksin. Hemen kaydol ve React Native ile mobil uygulama geliştirme yolculuğuna başla!",
