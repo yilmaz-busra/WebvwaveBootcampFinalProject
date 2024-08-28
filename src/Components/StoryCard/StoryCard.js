@@ -2,7 +2,6 @@ import React from "react";
 import "./styles.css";
 
 import Card from "react-bootstrap/Card";
-import { stories } from "../../data/stories";
 
 const StoryCard = ({ name, title, feedback }) => {
   return (
