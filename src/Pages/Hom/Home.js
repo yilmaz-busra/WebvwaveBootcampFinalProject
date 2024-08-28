@@ -1,10 +1,25 @@
 import React from "react";
-import { courses } from "../../courses";
+import { courses } from "../../data/courses";
 import Card from "../../Components/Card";
 import "../../App.css";
 import { Button } from "react-bootstrap";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import StoryCard from "../../Components/StoryCard/StoryCard";
+import { stories } from "../../data/stories";
 
 function Home() {
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 10000,
+    autoplaySpeed: 2000,
+  };
   return (
     <main>
       <section>
@@ -91,6 +106,21 @@ function Home() {
           className="career-guide-image"
         />
       </section>
+      <div>
+        <h2>Bizi Katılımcılarımızdan Dinle</h2>
+        <Slider {...settings}>
+          {stories.map((story) => {
+            return (
+              <StoryCard
+                key={story.id}
+                name={story.name}
+                title={story.title}
+                feedback={story.feedback}
+              />
+            );
+          })}
+        </Slider>
+      </div>
     </main>
   );
 }
