@@ -106,21 +106,71 @@ function Home() {
           className="career-guide-image"
         />
       </section>
-      <div>
+      <div className="storycardSection">
         <h2>Bizi Katılımcılarımızdan Dinle</h2>
-        <Slider {...settings}>
-          {stories.map((story) => {
-            return (
-              <StoryCard
-                key={story.id}
-                name={story.name}
-                title={story.title}
-                feedback={story.feedback}
-              />
-            );
-          })}
-        </Slider>
+        <div className="cardSectionStory">
+          <Slider {...settings}>
+            {stories.map((story) => {
+              return (
+                <StoryCard
+                  key={story.id}
+                  image={story.image}
+                  name={story.name}
+                  title={story.title}
+                  feedback={story.feedback}
+                />
+              );
+            })}
+          </Slider>
+        </div>
       </div>
+
+      <section className="why-join-us">
+        <div className="why-join-us-content">
+          <div className="join-us-item">
+            <img
+              src="/eventsbar-hiring.svg"
+              alt="Yeni Beceri Kazan"
+              className="join-us-icon"
+            />
+            <h3>Bootcamp</h3>
+            <p>
+              Bootcamp etkinlikleri, yazılım teknolojileri, veri bilimi, ürün
+              yönetimi gibi teknolojik konularda düzenlenir. Hem eğitim
+              alabilir, hem de o alanda işe başlayabilecek kadar fazla bilgi ve
+              donanım kazanabilirsin.
+            </p>
+          </div>
+          <div className="join-us-item">
+            <img
+              src="/eventsbar-hackathon.svg"
+              alt="Yeteneklerini Göster"
+              className="join-us-icon"
+            />
+            <h3>Hackathon</h3>
+            <p>
+              Hackathon etkinliklerinde takımlar halinde veya bireysel olarak
+              yarışacaksın. Etkinlik için belli bir zaman verilir ve yeni
+              fikirler, yeni dijital ürünler üretmesi, sonra da bunları
+              kodlaması istenir.
+            </p>
+          </div>
+          <div className="join-us-item">
+            <img
+              src="/eventsbar-hackathon.svg"
+              alt="Kariyer Fırsatlarını Yakalayın"
+              className="join-us-icon"
+            />
+            <h3>Hiring Challenge</h3>
+            <p>
+              Hiring Challenge yarışmalarında Android, iOS, algoritma veya kod
+              hatası gibi problemleri belirli bir zaman aralığı
+              içerisinde çözmeye çalışacaksın. Bu yarışmalarda algoritma
+              tasarımına, özgünlüğe ve kod kalitesine göre puan alırsın.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
