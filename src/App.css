@@ -125,3 +125,52 @@
   max-width: 35%;
   height: auto;
 }
+
+.storycardSection {
+  padding: 50px 250px;
+  background-color: #f6f6f6;
+}
+
+.storycardSection h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.why-join-us {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.why-join-us-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Elemanlar arasındaki boşluk */
+}
+
+.join-us-item {
+  padding: 20px;
+  width: 30%;
+  min-width: 300px;
+
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.join-us-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.join-us-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.join-us-item p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
