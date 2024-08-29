@@ -1,0 +1,129 @@
+.background-section {
+  background-image: url("/public/background.png"); /* Arka plan görseli */
+  background-size: cover; /* Tüm alanı kaplaması için */
+  background-position: center; /* Ortalanmış bir arka plan */
+  height: 65vh; /* Ekran yüksekliğinin %65'i */
+  display: flex; /* İçeriği esnek bir düzenlemeyle hizalamak için */
+  align-items: center; /* Dikey ortalama */
+  justify-content: center; /* Yatay ortalama */
+  color: #fff; /* Yazı rengi beyaz */
+  padding: 0 20px; /* Yanlardan içerik boşluğu */
+}
+
+.content-wrapper {
+  display: flex; /* Esnek kutu düzeni */
+  justify-content: space-between; /* İçeriği iki yana ayırma */
+  align-items: flex-start; /* Üstten hizalama */
+  max-width: 1200px; /* İçeriğin genişliği */
+  width: 100%;
+  gap: 20px; /* Elemanlar arasındaki boşluk */
+  flex-wrap: wrap; /* Küçük ekranlarda alt alta gelmesini sağlar */
+}
+
+.breadcrumb {
+  width: 100%;
+  font-size: 14px;
+  color: #b0b0b0; /* Kırıntı metni rengi */
+  margin-bottom: 10px; /* Alt boşluk */
+  text-align: left; /* Sola hizalama */
+}
+
+.breadcrumb a {
+  color: #b0b0b0; /* Bağlantı rengi */
+  text-decoration: none; /* Alt çizgisiz bağlantılar */
+}
+
+.container {
+  flex: 1; /* İçeriği esnek hale getirir */
+  max-width: 600px; /* Maksimum genişlik */
+  padding: 20px;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column; /* Dikey düzen */
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 36px; /* Başlık boyutu */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px; /* Paragraf yazı boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  display: block;
+  background-color: #28a745; /* Buton rengi */
+  color: #fff; /* Yazı rengi */
+  border: none;
+  padding: 10px 20px; /* Buton iç boşluğu */
+  font-size: 16px; /* Yazı boyutu */
+  border-radius: 5px; /* Kenar yuvarlatma */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde değişir */
+  margin-top: 10px;
+}
+
+.explore-button:hover {
+  background-color: #218838; /* Hover efekti */
+}
+
+.free-badge {
+  display: inline-block;
+  background-color: #ffffff; /* Rozet arka plan rengi */
+  color: #000; /* Yazı rengi */
+  width: auto;
+  padding: 5px 10px; /* İç boşluk */
+  border-radius: 20px; /* Kenar yuvarlatma */
+  font-size: 12px; /* Yazı boyutu */
+  margin-bottom: 10px;
+}
+
+.image-container {
+  flex: 1; /* Görselin esnekliği */
+  display: flex;
+  justify-content: end; /* Sağ tarafa hizalama */
+  align-items: center; /* Dikey ortalama */
+}
+
+.education-icon {
+  width: 90%; /* Görselin genişliği */
+  max-width: 600px; /* Maksimum genişlik */
+  height: auto; /* Görsel orantısını korur */
+}
+.course-list {
+  padding: 20px 250px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between course cards */
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Mobilde içeriği alt alta getirir */
+    align-items: center; /* İçeriği ortalar */
+  }
+
+  .container {
+    max-width: 90%; /* Mobilde genişlik ayarı */
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    max-width: 90%; /* Mobilde görsel genişlik ayarı */
+  }
+}
+
+.accordionCss {
+  margin: auto;
+  padding: 20px 250px;
+}
+
+.accordionCss p {
+  margin: 0 px 14px;
+  font-size: 14px;
+}
