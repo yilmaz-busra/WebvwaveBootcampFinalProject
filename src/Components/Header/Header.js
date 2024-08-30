@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./styles.css";
+import "./Header.css";
 function Header() {
   const settings = {
     dots: true,

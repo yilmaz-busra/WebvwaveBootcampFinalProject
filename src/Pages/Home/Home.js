@@ -1,7 +1,7 @@
 import React from "react";
 import { courses } from "../../data/courses";
-import Card from "../../Components/Card";
-import "../../App.css";
+import Card from "../../Components/Card/Card";
+import "./Home.css";
 import { Button } from "react-bootstrap";
 import Slider from "react-slick";
 
