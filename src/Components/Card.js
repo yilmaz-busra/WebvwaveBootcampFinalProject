@@ -3,7 +3,7 @@ import "./card.css";
 
 function Card({ title, preinformation, date, buttonText, image }) {
   return (
-    <div className="course-card">
+    <div className="cours-card">
       <div className="card-header">
         <img src={`/${image}`} alt="workshop" />
         <h3>{title}</h3>

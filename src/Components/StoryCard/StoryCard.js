@@ -3,7 +3,7 @@ import "./styles.css";
 
 const StoryCard = ({ image, name, title, feedback }) => {
   return (
-    <div className="course-card">
+    <div className="story-card">
       <div className="card-header">
         <img src={image} alt="participant" />
         <div className="feedback-container">
