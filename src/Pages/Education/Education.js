@@ -10,22 +10,21 @@ function Education() {
       <section>
         <div className="background-section">
           <div className="content-wrapper">
-            <nav className="breadcrumb">
+            {/* <nav className="breadcrumb">
               <a href="/">Ana Sayfa</a> &gt; <a href="#">Eğitimler</a>
-            </nav>
-            <div className="container">
-              <div className="container-content">
-                <h1 className="title">Eğitimler</h1>
-                <p className="description">
-                  Teknoloji dünyasında yer alan konular hakkında eğitim almak
-                  için doğru yerdesin! Sektörün önde gelen uzman eğitmenleri ile
-                  hazırladığımız eğitimleri tamamlayarak kariyerinde bir adım
-                  ileri gidebilir, yeteneklerini geliştirebilirsin.
-                </p>
-                <div>
-                  <span className="free-badge">Ücretsizdir</span>
-                  <button className="explore-button">Keşfet</button>
-                </div>
+            </nav> */}
+
+            <div className="container-content">
+              <h1 className="title">Eğitimler</h1>
+              <p className="description">
+                Teknoloji dünyasında yer alan konular hakkında eğitim almak için
+                doğru yerdesin! Sektörün önde gelen uzman eğitmenleri ile
+                hazırladığımız eğitimleri tamamlayarak kariyerinde bir adım
+                ileri gidebilir, yeteneklerini geliştirebilirsin.
+              </p>
+              <div>
+                <span className="free-badge">Ücretsizdir</span>
+                <button className="explore-button">Keşfet</button>
               </div>
             </div>
             <div className="image-container">
