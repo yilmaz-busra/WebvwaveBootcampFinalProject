@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   text-align: left;
   transition: transform 0.2s ease-in-out;
-  min-height: 300px;
+  min-width: 300px;
 }
 
 .course-card:hover {
@@ -19,7 +19,7 @@
 
 .card-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
 }
 
 .card-header img {
