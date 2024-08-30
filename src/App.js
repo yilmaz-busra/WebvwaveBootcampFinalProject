@@ -6,6 +6,7 @@ import JobPost from "./Pages/JobPost/JobPost";
 import Navbar from "./Components/Navbar";
 import Events from "./Pages/Events/Events";
 import Navbar1 from "./Components/Navbar/Navbar";
+import Company from "./Pages/Companies/Company";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/jobpost" element={<JobPost />} />
+          <Route path="/companies" element={<Company />} />
+
           <Route path="/events" element={<Events />} />
         </Routes>
       </Router>
