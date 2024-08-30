@@ -6,10 +6,11 @@
   align-items: center; /* Dikey ortalama */
   justify-content: center; /* Yatay ortalama */
   color: #fff; /* Yazı rengi beyaz */
+  position: relative;
   padding: 0 20px; /* Yanlardan içerik boşluğu */
 }
 
-.content-wrapper {
+.contentwrapper {
   display: flex; /* Esnek kutu düzeni */
   justify-content: space-between; /* İçeriği iki yana ayırma */
   align-items: flex-start; /* Üstten hizalama */
@@ -23,7 +24,9 @@
   font-size: 14px;
   color: #b0b0b0; /* Kırıntı metni rengi */
   margin-bottom: 10px; /* Alt boşluk */
-  text-align: left; /* Sola hizalama */
+  text-align: left;
+  position: absolute;
+  top: 10px;
 }
 
 .breadcrumb a {
