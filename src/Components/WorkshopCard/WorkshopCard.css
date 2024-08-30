@@ -1,0 +1,71 @@
+.workshop-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+  padding: 15px;
+  min-height: 300px;
+}
+
+.workshop-card:hover {
+  border: 1px solid #000000;
+}
+
+.workshop-card-header {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.workshop-image {
+  width: 100% !important;
+  min-height: 150px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.workshop-card-header h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.workshop-card-header p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer span {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.card-footer button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-footer button:hover {
+  background-color: #218838;
+}
