@@ -20,6 +20,7 @@
   margin-top: 50px;
   align-items: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .container-card button {
@@ -64,9 +65,14 @@
 .why-techcareer-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
   margin-top: 50px;
+}
+.why-techcareer-item {
+  width: 30%;
+  min-width: 300px;
 }
 
 .why-techcareer-item h3 {
@@ -120,9 +126,8 @@
 }
 
 .career-guide-image {
-  position: absolute;
-  right: 0;
-  max-width: 35%;
+  width: 50%;
+  min-width: 300px;
   height: auto;
 }
 
@@ -280,6 +285,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .why-techcareer {
+    padding: 0;
+    text-align: center;
+  }
   .techcareer-contact-info-content {
     flex-direction: column;
     align-items: center;
@@ -288,5 +297,38 @@
   .contact-info-text,
   .contact-info-image {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .career-guide {
+    padding: 0;
+    background-color: #efffeb;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .career-guide-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .storycardSection {
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .cardSectionStory {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container-card {
+    padding: 0px;
   }
 }

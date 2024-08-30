@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { courses } from "../../data/courses";
-import Card from "../../Components/Card/Card";
 import "./Home.css";
 import { Button } from "react-bootstrap";
 import Slider from "react-slick";
@@ -11,11 +10,30 @@ import StoryCard from "../../Components/StoryCard/StoryCard";
 import { stories } from "../../data/stories";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import WorkshopCard from "../../Components/WorkshopCard/WorkshopCard";
 function Home() {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Set initial width
+      setWidth(window.innerWidth);
+
+      // Update width on window resize
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      // Clean up event listener on component unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
   const settings = {
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: width > 768 ? 2 : 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 10000,
@@ -23,21 +41,14 @@ function Home() {
   };
   return (
     <main>
-      <section className="custom-section">
-        <div className="">
-          <img src="shape-dots.svg" alt="shape" className="w-32 h-auto" />
-        </div>
-        <div className="">
-          <img src="kesik-yan-cizgi.svg" alt="shape" className="w-32 h-auto" />
-        </div>
-        <div className="content-container">
-          <Header />
-        </div>
+      <section>
+        <Header />
       </section>
+
       <section className="container-card">
         <div className="container-cardItem">
           {courses.slice(0, 3).map((course) => (
-            <Card
+            <WorkshopCard
               key={course.id}
               title={course.title}
               image={course.image}
@@ -113,6 +124,7 @@ function Home() {
           className="career-guide-image"
         />
       </section>
+
       <div className="storycardSection">
         <h2>Bizi Katılımcılarımızdan Dinle</h2>
         <div className="cardSectionStory">
