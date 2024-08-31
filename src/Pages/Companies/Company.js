@@ -45,7 +45,7 @@ function Company() {
               yetenek arayışındaki zorlukları aşın!
             </p>
           </div>
-          <div className="formSection">
+          <div className="form-section">
             <form onSubmit={handleSubmit}>
               <label className="input-label">Adınız - Soyadınız*</label>
               <input
