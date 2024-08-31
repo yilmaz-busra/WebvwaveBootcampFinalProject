@@ -136,16 +136,17 @@
   .navbar-search-icon {
     display: block;
   }
-  .navbar-search-icon {
-    margin-right: auto;
-    right: 50px;
+  .navbar-search-icon.active {
+    display: none;
   }
   .navbar-search {
     display: none; /* Küçük ekranlarda başlangıçta gizle */
   }
 
   .navbar-search.active {
-    display: flex; /* Butona basıldığında göster */
+    display: flex;
+    width: 100%;
+    margin-left: 13px;
   }
 
   .navbar-links {

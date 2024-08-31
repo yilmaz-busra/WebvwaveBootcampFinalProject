@@ -36,7 +36,10 @@ function NavHeader() {
           />
         </div>
         {/* Arama Butonu (Küçük ekranlar için) */}
-        <div className="navbar-search-icon" onClick={toggleSearch}>
+        <div
+          className={`navbar-search-icon ${isSearchOpen ? "active" : ""}`}
+          onClick={toggleSearch}
+        >
           <span className="search-icon">&#128269;</span>
         </div>
 
