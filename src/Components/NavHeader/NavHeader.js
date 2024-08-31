@@ -42,7 +42,7 @@ function NavHeader() {
 
         <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <li className="dropdown">
-            <Link to="/events">Etkinlikler</Link>
+            <Link to="/event">Etkinlikler</Link>
 
             <ul className="dropdown-menu">
               <li>
@@ -55,7 +55,7 @@ function NavHeader() {
                 <Link to="/about">Hiring Challenge </Link>
               </li>
               <li>
-                <Link to="/about">Tüm Etkinlikler </Link>
+                <Link to="/event">Tüm Etkinlikler </Link>
               </li>
             </ul>
           </li>
@@ -66,11 +66,11 @@ function NavHeader() {
             <Link to="/education">Eğitimler</Link>
           </li>
           <li className="dropdown">
-            <Link to="/events">Komünite</Link>
+            <Link to="/">Komünite</Link>
 
             <ul className="dropdown-menu">
               <li>
-                <Link to="#">Komüniteye Katıl</Link>
+                <Link to="/community">Komüniteye Katıl</Link>
               </li>
               <li>
                 <Link to="#">TDC</Link>
