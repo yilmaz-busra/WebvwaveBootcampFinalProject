@@ -284,18 +284,18 @@
 }
 
 .additional-services {
-  background-color: #293349;
+  background-color: #fff;
   padding: 40px 20px;
   text-align: center;
 }
 
 .additional-title {
   font-size: 2em;
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
 }
 
 .additional-description {
   font-size: 1.2em;
-  color: #fff;
+  color: #000;
 }
