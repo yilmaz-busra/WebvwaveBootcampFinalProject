@@ -1,0 +1,95 @@
+.background-section {
+  background-image: url("/public/background.png"); /* Arka plan görseli */
+  background-size: cover; /* Tüm alanı kaplaması için */
+  height: 65vh; /* Ekran yüksekliğinin %65'i */
+  display: flex; /* İçeriği esnek bir düzenlemeyle hizalamak için */
+  align-items: center; /* Dikey ortalama */
+  justify-content: center; /* Yatay ortalama */
+  color: #fff; /* Yazı rengi beyaz */
+  position: relative;
+  padding: 0 20px; /* Yanlardan içerik boşluğu */
+}
+
+.contentwrapper {
+  display: flex; /* Esnek kutu düzeni */
+  justify-content: space-between; /* İçeriği iki yana ayırma */
+  align-items: flex-start; /* Üstten hizalama */
+  max-width: 1200px; /* İçeriğin genişliği */
+  width: 100%;
+  gap: 20px; /* Elemanlar arasındaki boşluk */
+}
+
+.breadcrumb {
+  width: 200px !important;
+  font-size: 14px;
+  color: #b0b0b0; /* Kırıntı metni rengi */
+  margin-bottom: 10px; /* Alt boşluk */
+  text-align: left;
+  position: absolute;
+  top: 10px;
+}
+
+.breadcrumb a {
+  color: #b0b0b0; /* Bağlantı rengi */
+  text-decoration: none; /* Alt çizgisiz bağlantılar */
+}
+
+.container {
+  max-width: 600px; /* Maksimum genişlik */
+  padding: 20px;
+}
+
+.container-content {
+  width: 600px;
+}
+
+.title {
+  font-size: 36px; /* Başlık boyutu */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px; /* Paragraf yazı boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  display: block;
+  background-color: #28a745; /* Buton rengi */
+  color: #fff; /* Yazı rengi */
+  border: none;
+  padding: 10px 20px; /* Buton iç boşluğu */
+  font-size: 16px; /* Yazı boyutu */
+  border-radius: 5px; /* Kenar yuvarlatma */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde değişir */
+  margin-top: 10px;
+}
+
+.explore-button:hover {
+  background-color: #218838; /* Hover efekti */
+}
+
+.title-h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.techcareer-contact-info {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #218838 !important;
+}
+
+.accordionCss {
+  margin: 10px 0;
+}
+
+.accordionCss p {
+  margin: 0 px 14px;
+  font-size: 14px;
+}
