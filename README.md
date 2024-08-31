@@ -4,9 +4,7 @@ Bu proje, WebWave Front-End Bootcamp bitirme projesi kapsamında oluşturulmuşt
 
 ## İçerik
 
-Proje Hakkında
-Özellikler
-Kullanılan Teknolojiler
+
 
 ### 📌 Proje Hakkında
 
@@ -15,8 +13,8 @@ Bu proje, Techcareer.net'in tasarımını ve temel işlevselliğini klonlamayı 
 
 ### 🚀 Kullanılan Teknolojiler
 
-React: Kullanıcı arayüzü bileşenleri oluşturmak için.
-CSS: Sayfa tasarımını ve düzenini oluşturmak için.
+##React: Kullanıcı arayüzü bileşenleri oluşturmak için.
+##CSS: Sayfa tasarımını ve düzenini oluşturmak için.
 
 
 # WebvwaveBootcampFinalProject
