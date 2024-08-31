@@ -13,8 +13,10 @@ Bu proje, Techcareer.net'in tasarımını ve temel işlevselliğini klonlamayı 
 
 ### 🚀 Kullanılan Teknolojiler
 
-##React: Kullanıcı arayüzü bileşenleri oluşturmak için.
-##CSS: Sayfa tasarımını ve düzenini oluşturmak için.
+React: Kullanıcı arayüzü bileşenleri oluşturmak için.
+
+
+CSS: Sayfa tasarımını ve düzenini oluşturmak için.
 
 
 # WebvwaveBootcampFinalProject
