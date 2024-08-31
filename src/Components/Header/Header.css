@@ -6,19 +6,19 @@
   background-color: #f0f4f8;
 }
 
-.slidercontent {
+.slider-content {
   position: relative;
   padding: 50px;
 }
 
-.sliderdoticon {
+.slider-doticon {
   position: absolute;
   top: 40px;
   left: 100px;
   z-index: -10;
 }
 
-.sliderkesikicon {
+.slider-kesikicon {
   position: absolute;
   top: 25px;
   right: 85px;
