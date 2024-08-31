@@ -8,13 +8,13 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;
 }
 
 .techcareer-footer-item {
   flex: 1;
   margin: 10px;
-  min-width: 150px; /* Minimum width for small screens */
+  min-width: 150px;
 }
 
 .techcareer-footer-item h3 {

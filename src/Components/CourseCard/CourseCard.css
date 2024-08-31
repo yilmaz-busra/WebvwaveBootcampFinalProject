@@ -1,4 +1,5 @@
 .course-card {
+  min-width: 300px; /* Minimum width for cards */
   background-color: white; /* White background for cards */
   border: 1px solid #ddd; /* Light border */
   border-radius: 8px;
