@@ -6,35 +6,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   color: #fff;
+  padding: 0 20px;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  text-align: center;
 }
 
 .breadcrumb {
-  width: 100%;
+  width: 200px !important;
   font-size: 14px;
   color: #b0b0b0;
+  margin-bottom: 10px; /* Alt boşluk */
   text-align: left;
+  position: absolute;
+  top: 40px;
 }
 
 .breadcrumb a {
   color: #b0b0b0;
   text-decoration: none;
 }
-
-.container {
-  flex: 1;
-  max-width: 600px;
+.deneme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
 }
-
+.container-image-bg {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.container-image-content {
+  width: 600px;
+}
 .title {
   font-size: 28px;
   font-weight: bold;

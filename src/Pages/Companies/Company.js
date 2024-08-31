@@ -14,18 +14,22 @@ function Company() {
       <div className="background-section">
         <div className="content-wrapper">
           <nav className="breadcrumb">
-            <a href="/">Ana Sayfa</a> &gt; <a href="#">Şirketler</a>
+            <a href="/">Ana Sayfa</a> <span>&gt;</span>{" "}
+            <a href="#">Şirketler</a>
           </nav>
-          <div className="container">
-            <div className="container-content">
-              <h1 className="title">
-                Şirketiniz için en doğru{" "}
-                <span className=""> "Dijital Yetenek" </span> techcareer.net'te!
-              </h1>
+          <div className="denem">
+            <div className="container-image-bg">
+              <div className="container-image-content">
+                <h1 className="title">
+                  Şirketiniz için en doğru{" "}
+                  <span className=""> "Dijital Yetenek" </span>{" "}
+                  techcareer.net'te!
+                </h1>
 
-              <button className="explore-button">
-                Hemen Etkinlikler Düzenle
-              </button>
+                <button className="explore-button">
+                  Hemen Etkinlikler Düzenle
+                </button>
+              </div>
             </div>
           </div>
         </div>
