@@ -1,5 +1,3 @@
-/* NavHeader.css */
-
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
@@ -7,7 +5,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
+  left: -10;
   z-index: 1000;
   display: flex;
   justify-content: center; /* Ortala */
@@ -27,7 +25,7 @@
   font-weight: bold;
   color: #2c2c2c;
   text-decoration: none;
-  margin-right: 20px; /* Boşluk ekle */
+  margin-left: 30px; /* Boşluk ekle */
 }
 
 .navbar-logo span {
@@ -65,7 +63,6 @@
   cursor: pointer;
   position: absolute; /* Konumlandırma */
   left: 0; /* En solda */
-  margin-left: 20px;
 }
 
 .navbar-links {
@@ -139,7 +136,10 @@
   .navbar-search-icon {
     display: block;
   }
-
+  .navbar-search-icon {
+    margin-right: auto;
+    right: 50px;
+  }
   .navbar-search {
     display: none; /* Küçük ekranlarda başlangıçta gizle */
   }
