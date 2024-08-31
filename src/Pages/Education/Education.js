@@ -11,7 +11,8 @@ function Education() {
         <div className="background-section">
           <div className="contentwrapper">
             <nav className="breadcrumb">
-              <a href="/">Ana Sayfa</a> &gt; <a href="#">Eğitimler</a>
+              <a href="/">Ana Sayfa</a> <span>&gt;</span>{" "}
+              <a href="#">Eğitimler</a>
             </nav>
 
             <div className="container-content">
