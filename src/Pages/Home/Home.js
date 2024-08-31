@@ -11,9 +11,13 @@ import { stories } from "../../data/stories";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import WorkshopCard from "../../Components/WorkshopCard/WorkshopCard";
+import { useNavigate } from "react-router-dom";
 function Home() {
   const [width, setWidth] = useState(0);
-
+  const navigate = useNavigate();
+  const handleRedirect = () => {
+    navigate("/event");
+  };
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Set initial width
@@ -58,7 +62,7 @@ function Home() {
             />
           ))}
         </div>
-        <Button>Tüm Etkinlikleri Gör</Button>
+        <Button onClick={handleRedirect}>Tüm Etkinlikleri Gör</Button>
       </section>
 
       <section className="why-techcareer">
