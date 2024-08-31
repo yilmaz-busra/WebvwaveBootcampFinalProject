@@ -6,6 +6,8 @@ import JobPost from "./Pages/JobPost/JobPost";
 
 import Company from "./Pages/Companies/Company";
 import NavHeader from "./Components/NavHeader/NavHeader";
+import Event from "./Pages/Event/Event";
+import Community from "./Pages/Community/Community";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/jobpost" element={<JobPost />} />
           <Route path="/companies" element={<Company />} />
+          <Route path="/event" element={<Event />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
       </Router>
     </div>
