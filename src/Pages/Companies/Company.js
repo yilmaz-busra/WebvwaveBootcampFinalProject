@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Company.css";
-
+import Footer from "../../Components/Footer/Footer";
 function Company() {
   const [name, setName] = useState("");
 
@@ -45,7 +45,7 @@ function Company() {
               yetenek arayışındaki zorlukları aşın!
             </p>
           </div>
-          <div className="form-section">
+          <div className="formSection">
             <form onSubmit={handleSubmit}>
               <label className="input-label">Adınız - Soyadınız*</label>
               <input
@@ -197,6 +197,18 @@ function Company() {
           </div>
         </div>
       </section>
+
+      <section className="additional-services">
+        <h2 className="additional-title">
+          Teknoloji Alanında Aradığınız En Doğru "Dijital Yetenek"
+        </h2>
+        <p className="additional-description">
+          En doğru çalışanı en kısa sürede bulun!
+        </p>
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
