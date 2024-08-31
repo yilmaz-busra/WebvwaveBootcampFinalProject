@@ -12,24 +12,21 @@ function Company() {
   return (
     <div>
       <div className="background-section">
+        <nav className="breadcrumb">
+          <a href="/">Ana Sayfa</a> <span>&gt;</span> <a href="#">Şirketler</a>
+        </nav>
         <div className="content-wrapper">
-          <nav className="breadcrumb">
-            <a href="/">Ana Sayfa</a> <span>&gt;</span>{" "}
-            <a href="#">Şirketler</a>
-          </nav>
-          <div className="denem">
-            <div className="container-image-bg">
-              <div className="container-image-content">
-                <h1 className="title">
-                  Şirketiniz için en doğru{" "}
-                  <span className=""> "Dijital Yetenek" </span>{" "}
-                  techcareer.net'te!
-                </h1>
+          <div className="container-image-bg">
+            <div className="container-image-content">
+              <h1 className="title">
+                Şirketiniz için en doğru{" "}
+                <span className="color-txt"> "Dijital Yetenek" </span>{" "}
+                techcareer.net'te!
+              </h1>
 
-                <button className="explore-button">
-                  Hemen Etkinlikler Düzenle
-                </button>
-              </div>
+              <button className="explore-button">
+                Hemen Etkinlikler Düzenle
+              </button>
             </div>
           </div>
         </div>
